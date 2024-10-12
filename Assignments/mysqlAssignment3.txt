@@ -1,0 +1,14 @@
+1) Does ANSI recognize the data type DATE?
+The ANSI recongnize the date as data type, this is part of sql standard data type and supported 
+by most of RDBMS.
+
+2) Which subdivision of SQL is used to insert values in tables-
+There are 4 sub divisions of SQL 
+  1] DDL - Data Definiation language,
+     which include create, drop, after
+  2] DML - data management lang,
+  which include (insert, update, delete)
+  3] DCL - data control lang.,
+    which include Grant, Revoke command.
+  4] DQL- data Query Lang.,
+     It include SELECT statement.
