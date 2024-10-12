@@ -1,0 +1,32 @@
+1) Which field of the Customers table is the primary key-
+Typically primary key in the table is unique field that identifies each record in the table.
+Primary key in the table varies from table to table.
+CNUM is primary key for the customers table because each value uniquely identifies each record separately.
+
+mysql> desc CUSTOMERS;  ----> shows  no key hence we can assume the table don't have primary key.
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| CNUM   | int         | YES  |     | NULL    |       |
+| CNAME  | varchar(10) | YES  |     | NULL    |       |
+| CITY   | varchar(10) | YES  |     | NULL    |       |
+| RATING | int         | YES  |     | NULL    |       |
+| SNUM   | int         | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+2) What is the 4th column of the Customers table?
+
+mysql> select *from CUSTOMERS LIMIT 1;  or desc CUSTOMERS;
++------+---------+--------+--------+------+
+| CNUM | CNAME   | CITY   | RATING | SNUM |
++------+---------+--------+--------+------+
+| 2001 | Hoffman | London |    100 | 1001 |
++------+---------+--------+--------+------+
+Hence 4 th column in the CUSTOMERS table is SNUM.
+
+3) What is another word for row? For column?
+For rows -> It can also be called as records,tuple,entity.
+For column -> It can also be called as Fields,attribute or KEY.
+
+4) Why isn’t it possible to see the first five rows of a table?
+when rows are generated they get scattered and fragmented on DB server HD randomly but are accessible sequentially , Hence it is not possible to acess first five or last five rows separately. we can acess rows by using select statement with WHERE CLAUSE.
+
